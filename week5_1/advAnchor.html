@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- advAnchor.html -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      a:link {
+        color:blue; background-color:transparent; text-decoration:none;}
+      a:visited {
+        color:pink; background-color:transparent; text-decoration:none;}
+      a:hover {
+        color:red; background-color:transparent; text-decoration:underline;}
+      a:active {
+        color:blue; background-color:transparent; text-decoration:none;}
+    </style>
+    <title>HTML5 Anchor Training</title>
+  </head>
+  <body>
+    <h3 id="chapter1">Chapter 1</h3>
+    <p>Chapter 1 defines this </p>
+    <p>here</p>
+    <a href="https://google.com" target="_blank">Move to Google(New tab)</a><br/>
+    <a href="anchor2.html">Move document within the site</a><br/>
+    <a href="#chapter3">Move document within Chapter3(bookmark)</a><br/>
+    <h3 id ="chapter2">Chapter 2</h3>
+    <p>Chapter 2 defines this </p>
+    <p>In hypermedia like HTML, Node is <strong>basic unit</strong> that expresses HTML document and multimedia.
+      Link means <strong>connection between Nodes</strong> and anchor means <strong>Link's start point or arrival point</strong></p>
+    <p>If you are curious about what you studied in Chapter 1, Click <a href="#chapter1">here</a>.</p>
+    <h3 id="chapter3">Chapter 3</h3>
+    <p>Chapter 3 defines this </p>
+    <ul>
+      <li><a href="https://www.naver.com" target="_blank">Naver(New tab)</a></li>
+      <li><a href="anchor2.html">Move document within the site</a></li>
+      <li><a href="#chapter1">Move to Chapter 1(bookmark)</a></li>
+    </ul>
+    <table>
+      <tr>
+        <th>Move address</th><th>Site name</th><th>Info</th>
+      </tr>
+      <tr>
+        <td>Google</td><td><a href="https://www.naver.com">Naver</a></td><td>Naver</td>
+      </tr>
+      <tr>
+        <td>Another doc in site</td><td><a = href="anchor2.html">Move to anchor2.html</td><td>anchor2</td>
+      </tr>
+      <tr>
+        <td>Chapter 1</td><td><a href="#chapter1">Move to Chapter 1(bookmark)</a></td><td>Chapter 1</td>
+      </tr>
+    </table>
+  </body>
+</html>
