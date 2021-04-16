@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- basicVSemantic.html -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      header, nav, section, article, aside, footer
+      { border:1px solid gray; margin:5px; padding:8px; width:1000px; }
+      header h2 { float:left; border:solid 1px gray; margin:0 0 0 0; }
+      header #headMenu { float:right; border:soild 1px gray; margin:20px 0 0 0; }
+      header ul { margin:0; padding:0; }
+      header ul li { display:inline; margin:5px; }
+      header img { width:990px; height:200px; }
+      section { width:750px; float:left; }
+      section section {width:725px; float:left; }
+      aside { width:221px; float:left; line-height:30px; }
+      footer { height:50px; clear:both; }
+      nav ul { margin:0; padding:0; }
+      nav ul li {display:inline; margin:5px; }
+      aside ul { margin:0; padding:0; }
+      aside ul li { display:block; margin:5px; }
+      aisde ul li img { width:50px; height:50px; }
+      a:link {
+        color:blue; background-color:transparent; text-decoration:none; }
+      a:visited {
+        color:pink; background-color:transparent; text-decoration:none; }
+      a:hover {
+        color:red; background-color:transparent; text-decoration:underline; }
+      a:active {
+        color:blue; background-color:transparent; text-decoration:none; }
+    </style>
+    <title>Semantic Training</title>
+  </head>
+  <body>
+    <header>
+      <h2><a href="https://jsptogo.herokuapp.com/12/basicSemantic4.html">Welcome to Training</a></h2>
+      <ul id="headMenu">
+        <li>Login|</li>
+        <li><a href="https://jsptogo.herokuapp.com/12/basicSemanticMember1.html">Sign in</a>|</li>
+        <li>Site Map</li>
+      </ul>
+      <img src="../images/scene.png" alt="himalaya"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="https://www.w3.org/TR/html5" target="_blank">HTML5</a></li>
+        <li><a href="htpps:/jquery.com" target="_blank">JQuery</a></li>
+        <li><a href="htpps:/jquerymoblie.com" target="_blank">JQuery Moblie</a></li>
+        <li><a href="./jspintro.html">JSP</a></li>
+      </ul>
+    </nav>
+    <section> <!-- main -->
+      <section id="memberArea">
+        <form id="memberForm" action="http://jspwork.herokuapp.com/ex/regCheck.jsp" method="post">
+          <fieldset>
+              <legend>user information</legend>
+            <fieldset>
+              <legend>name / email</legend>
+              <label for="stud_name">Name</label>
+              <input id="stud_name" type="text" name="stud_name" size="20" maxlength="50" required/><br/>
+              <label for="stud_email">Email</label>
+              <input id="stud_email" type="text" name="stud_email" size="20" maxlength="50" required/><br/>
+              <label for="stud_phone">Phone</label>
+              <input id="stud_phone" type="text" name="stud_phone" size="20" maxlength="50" required/><br/>
+            </fieldset>
+            <fieldset>
+              <legend>Id / Pw</legend>
+              <label for="stud_id">ID</label>
+              <input id="stud_id" type="text" name="stud_id" size="20" maxlength="50" required/><br/>
+              <label for="stud_passwd">PW</label>
+              <input id="stud_passwd" type="password" name="stud_passwd" size="20" maxlength="50" required/><br/>
+            </fieldset>
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="stud_gender1">Female</label>
+              <input id="stud_gender1" type="radio" name="stud_gender" value="Female" checked/>
+              <label for="stud_gender2">Male</label>
+              <input id="stud_gender2" type="radio" name="stud_gender" value="Male" checked/>
+            </fieldset>
+            <fieldset>
+              <legend>Hobby</legend>
+              <label for="stud_hobby1">Fishing</label>
+              <input id="stud_hobby1" type="checkbox" name="stud_hobby" value="Fishing"/>
+              <label for="stud_hobby2">Baduk</label>
+              <input id="stud_hobby2" type="checkbox" name="stud_hobby" value="Baduk"/>
+              <label for="stud_hobby3">Reading</label>
+              <input id="stud_hobby3" type="checkbox" name="stud_hobby" value="Reading"/>
+            </fieldset>
+            <input type="submit" value="Sign_In">
+            <input type="reset" value="cancel">
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <aside>
+      <ul>
+        <li><a href="https://www.google.com"><img src="https://sorry21237.github.io/images/googlePlus.png" alt="Google"/></a></li>
+        <lu><a href="https://www.facebook.com"><img src="https://sorry21237.github.io/images/facebookOne.png" alt="Facebook"/></a></li>
+        <li><a href="https://www.twitter.com"><img src="https://sorry21237.github.io/images/twitterYou.png" alt="Twitter"/></a></li>
+      </ul>
+      </aside>
+    <footer>
+      <p>&copy; 2021 Made by Korea. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
