@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- basicVSemantic.html -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      header, nav, section, article, aside, footer
+      { border:1px solid gray; margin:5px; padding:8px; width:1000px; }
+      header h2 { float:left; border:solid 1px gray; margin:0 0 0 0; }
+      header #headMenu { float:right; border:soild 1px gray; margin:20px 0 0 0; }
+      header ul { margin:0; padding:0; }
+      header ul li { display:inline; margin:5px; }
+      header img { width:990px; height:200px; }
+      section { width:750px; float:left; }
+      section section {width:725px; float:left; }
+      aside { width:221px; float:left; line-height:30px; }
+      footer { height:50px; clear:both; }
+      nav ul { margin:0; padding:0; }
+      nav ul li {display:inline; margin:5px; }
+      aside ul { margin:0; padding:0; }
+      aside ul li { display:block; margin:5px; }
+      aisde ul li img { width:50px; height:50px; }
+      a:link {
+        color:blue; background-color:transparent; text-decoration:none; }
+      a:visited {
+        color:pink; background-color:transparent; text-decoration:none; }
+      a:hover {
+        color:red; background-color:transparent; text-decoration:underline; }
+      a:active {
+        color:blue; background-color:transparent; text-decoration:none; }
+    </style>
+    <title>Semantic Training</title>
+  </head>
+  <body>
+    <header>
+      <h2><a href="https://jsptogo.herokuapp.com/12/basicSemantic4.html">Welcome to Training</a></h2>
+      <ul id="headMenu">
+        <li>Login|</li>
+        <li><a href="https://jsptogo.herokuapp.com/12/basicSemanticMember1.html">Sign in</a>|</li>
+        <li>Site Map</li>
+      </ul>
+      <img src="../images/scene.png" alt="himalaya"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="https://www.w3.org/TR/html5" target="_blank">HTML5</a></li>
+        <li><a href="htpps:/jquery.com" target="_blank">JQuery</a></li>
+        <li><a href="htpps:/jquerymoblie.com" target="_blank">JQuery Moblie</a></li>
+        <li><a href="./jspintro.html">JSP</a></li>
+      </ul>
+    </nav>
+    <section>
+      <section>
+        <a href="anchor2.html">
+          <h3 id="chapter1">Today's Traffic</h3>
+        </a>
+        <p>It provides a video of today's traffic conditions. This place is Deajeon. Below is the traffic situation</p>
+        <h4>Video Tag 1 320*200</h4>
+        <video controls="controls" height="320" width="200">
+          <source src="..media/traffic.mp4" type="video/mp4">
+          <source src="..media/traffic.ogg" type="video/ogg">
+          <source src="..media/traffic.webm" type="video/webm">
+          The browser does not support it or the video format file does not exist.
+        </video><hr/>
+      </section>
+       <section>
+        <h3 id="chapter2">Chapter 2</h3>
+        <p>Chapter 2. Chapter 2 define this.</p>
+        <p>In hypermedia like HTML, Node is <strong>basic unit</strong> that expresses HTML document and multimedia.
+          Link means <strong>connection between Nodes</strong> and anchor means <strong>Link's start point or arrival point</strong></p>
+        <p>If you are curious about what you studied in Chapter 1, Click <a href="#chapter1">here</a>.</p>
+      </section>
+      <section>
+        <h3 id="chapter3">Chapter 3</h3>
+        <p>Chapter 3 defines this </p>
+        <table>
+          <tr>
+            <th>Move address</th><th>Site name</th><th>Info</th>
+          </tr>
+          <tr>
+            <td>Google</td><td><a href="https://www.naver.com">Naver</a></td><td>Naver</td>
+          </tr>
+          <tr>
+            <td>Another doc in site</td><td><a = href="anchor2.html">Move to anchor2.html</td><td>anchor2</td>
+          </tr>
+          <tr>
+            <td>Chapter 1</td><td><a href="#chapter1">Move to Chapter 1(bookmark)</a></td><td>Chapter 1</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <aside>
+      <ul>
+        <li><a href="https://www.google.com"><img src="https://sorry21237.github.io/images/googlePlus.png" alt="Google"/></a></li>
+        <lu><a href="https://www.facebook.com"><img src="https://sorry21237.github.io/images/facebookOne.png" alt="Facebook"/></a></li>
+        <li><a href="https://www.twitter.com"><img src="https://sorry21237.github.io/images/twitterYou.png" alt="Twitter"/></a></li>
+      </ul>
+      </asid>
+    <footer>
+      <p>&copy; 2021 Made by Korea. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
