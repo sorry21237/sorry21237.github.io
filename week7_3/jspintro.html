@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=divece-width, initial-scale=1"/>
+    <style>
+      header, nav, section, article, aside, footer
+      { border:1px solid gray; margin:5px; padding:8px; width:1000px; }
+      header h2 { float:left; border:solid 1px gray; margin:0 0 0 0; }
+      header #headMenu { float:right; border:soild 1px gray; margin:20px 0 0 0; }
+      header ul { margin:0; padding:0; }
+      header ul li { display:inline; margin:5px; }
+      header img { width:990px; height:200px; }
+      section { width:750px; float:left; }
+      section section {width:725px; float:left; }
+      aside { width:221px; float:left; line-height:30px; }
+      footer { height:50px; clear:both; }
+      nav ul { margin:0; padding:0; }
+      nav ul li {display:inline; margin:5px; }
+      aside ul { margin:0; padding:0; }
+      aside ul li { display:block; margin:5px; }
+      aisde ul li img { width:50px; height:50px; }
+      a:link {
+        color:blue; background-color:transparent; text-decoration:none; }
+      a:visited {
+        color:pink; background-color:transparent; text-decoration:none; }
+      a:hover {
+        color:red; background-color:transparent; text-decoration:underline; }
+      a:active {
+        color:blue; background-color:transparent; text-decoration:none; }
+    </style>
+    <title> HTML5 Semantic Training</title>
+  </head>
+  <body>
+    <header>
+      <h2>Welcome to training</h2>
+      <img src="https://sorry21237.github.io/images/scene.png" alt="Himalaya"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="https://google.com" target="_blank">Move to Google(New tab)</a></li>
+        <li><a href="basicVSemantic.html">Home</a></li>
+        <li><a href="#chapter1">Move document within Chapter1(bookmark)</a></li>
+      </ul>
+    </nav>
+    <section>
+      <section>
+        <a href="anchor2.html">
+          <h3 id="chapter1">Today's Traffic</h3>
+        </a>
+        <p>It provides a video of today's traffic conditions. This place is Deajeon. Below is the traffic situation</p>
+        <h4>Video Semantic</h4>
+        <video id="traffic" controls="controls">
+          <source src="..media/traffic.mp4" type="video/mp4">
+          <source src="..media/traffic.ogg" type="video/ogg">
+          <source src="..media/traffic.webm" type="video/webm">
+          The browser does not support it or the video format file does not exist.
+        </video><hr/>
+      </section>
+    </section>
+  </body>
+</html>
